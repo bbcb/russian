@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 NAME=bbcb-ru
 VERSION=1.0
