@@ -1,17 +1,17 @@
 #!/bin/sh
 
-NAME=bbcb-ru
+NAME=bbcb2-ru
 VERSION=1.0
 HOMEPAGE=https://github.com/bbcb/russian
-MAINTAINER_1="Ivan Denisov <d.ivan.krsk@gmail.com>"
+MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
 
 SIZE=$(du -a . | tail -n 1 | awk '{print $1}')
 
-TMP=/tmp/bbcb-ru-deb/
+TMP=./bbcb2-ru-deb/
 BBCB=$TMP$NAME-$VERSION
 DEBIAN=$BBCB/DEBIAN
 DOC=$BBCB/usr/share/doc/$NAME
-BLACKBOX=/usr/lib/blackbox
+BLACKBOX=/usr/lib/blackbox2
 
 makedeb() {
     cp -r */ $BBCB$BLACKBOX/
@@ -33,7 +33,7 @@ rm -fr $TMP
 mkdir -p $BBCB$BLACKBOX $DEBIAN $DOC
 
 cat > $DEBIAN/control << EOF
-Source: bbcb-ru
+Source: $NAME
 Section: devel
 Maintainer: ${MAINTAINER_1}
 Homepage: ${HOMEPAGE}
@@ -43,17 +43,17 @@ Priority: optional
 Installed-Size: ${SIZE}
 Architecture: all
 Depends: bbcb|bbcb:i386
-Description: Пакет русификации для BlackBox Component Builder
+Description: Пакет русификации для BlackBox Component Builder 2.0
  Русификация меню и документации интегрированной среды программирования
  .
  для Компонентного Паскаля
 EOF
 
 gzip -9cn - > $DOC/changelog.gz << EOF
- bbcb-ru (1.0) unstable; urgency=low
+ bbcb2-ru (1.0) unstable; urgency=low
   * Initial package
 
- -- ${MAINTAINER_1} Sun, 03 Jan 2021 00:00:00 +0200
+ -- ${MAINTAINER_1} Sat, 25 Jan 2022 00:00:00 +0700
 EOF
 
 cat > $DOC/copyright << EOF
@@ -62,7 +62,7 @@ Upstream-Name: ${NAME}
 Source: ${HOMEPAGE}
 
 Files: *
-Copyright: 2018-2021 Ivan A. Denisov <d.ivan.krsk@gmail.com>
+Copyright: 2018-2022 Authors (Docu/ru/BB-Translators.odc)
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  .
