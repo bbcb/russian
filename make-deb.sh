@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=1.0
+VERSION=2.0
 HOMEPAGE=https://github.com/bbcb/russian
 MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
 
@@ -42,7 +42,7 @@ Version: ${VERSION}
 Priority: optional
 Installed-Size: ${SIZE}
 Architecture: all
-Depends: bbcb|bbcb:i386
+Depends: bbcb2|bbcb2:i386
 Description: Пакет русификации для BlackBox Component Builder 2.0
  Русификация меню и документации интегрированной среды программирования
  .
@@ -53,7 +53,7 @@ gzip -9cn - > $DOC/changelog.gz << EOF
  bbcb2-ru (1.0) unstable; urgency=low
   * Initial package
 
- -- ${MAINTAINER_1} Sat, 25 Jan 2022 00:00:00 +0700
+ -- ${MAINTAINER_1} Sat, 25 Jan 2022 13:00:00 +0700
 EOF
 
 cat > $DOC/copyright << EOF
