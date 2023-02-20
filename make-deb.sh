@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=2.6
+VERSION=2.7
 HOMEPAGE=https://github.com/bbcb/russian
 MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
 
