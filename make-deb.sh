@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=2.8
+VERSION=2.9
 HOMEPAGE=https://github.com/bbcb/russian
 MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
 
@@ -50,7 +50,11 @@ Description: Пакет русификации для BlackBox Component Builder
 EOF
 
 gzip -9cn - > $DOC/changelog.gz << EOF
- bbcb2-ru (1.0) unstable; urgency=low
+ bbcb2-ru (2.9) unstable; urgency=low
+  * Parent folder, Trap, and figures for Tut-2
+
+ -- ${MAINTAINER_1} Mon, 08 May 2023 18:00:00 +0700
+
   * Initial package
 
  -- ${MAINTAINER_1} Sat, 25 Jan 2022 13:00:00 +0700
@@ -62,7 +66,7 @@ Upstream-Name: ${NAME}
 Source: ${HOMEPAGE}
 
 Files: *
-Copyright: 2018-2022 Authors (Docu/ru/BB-Translators.odc)
+Copyright: 2018-2023 Authors (Docu/ru/BB-Translators.odc)
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  .
