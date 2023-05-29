@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=2.10
+VERSION=2.13
 HOMEPAGE=https://github.com/bbcb/russian
 MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
 
@@ -50,6 +50,16 @@ Description: Пакет русификации для BlackBox Component Builder
 EOF
 
 gzip -9cn - > $DOC/changelog.gz << EOF
+ bbcb2-ru (2.13) unstable; urgency=low
+  * fix size of Help document
+
+ -- ${MAINTAINER_1} Tue, 28 May 2023 02:00:00 +0700
+
+ bbcb2-ru (2.12) unstable; urgency=low
+  * new settings in preferences
+
+ -- ${MAINTAINER_1} Tue, 28 May 2023 02:00:00 +0700
+
  bbcb2-ru (2.10) unstable; urgency=low
   * design of Help window fixed
 
