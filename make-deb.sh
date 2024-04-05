@@ -22,7 +22,7 @@ makedeb() {
     md5deep -rl usr > DEBIAN/md5sums
     chmod 644 DEBIAN/md5sums
     cd ..
-    fakeroot dpkg-deb --build *
+    fakeroot dpkg-deb -Zxz --build *
     cd $CURD
     echo Built $BBCB.deb
     lintian $BBCB.deb
