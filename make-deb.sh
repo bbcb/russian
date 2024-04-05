@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=2.14
+VERSION=2.15
 HOMEPAGE=https://github.com/bbcb/russian
 MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
 
@@ -50,6 +50,11 @@ Description: Пакет русификации для BlackBox Component Builder
 EOF
 
 gzip -9cn - > $DOC/changelog.gz << EOF
+ bbcb2-ru (2.15) unstable; urgency=low
+  * scale factor
+
+ -- ${MAINTAINER_1} Sat, 06 Apr 2023 02:00:00 +0700
+
  bbcb2-ru (2.14) unstable; urgency=low
   * checkbox in Help
   * Language Report fixed
@@ -89,7 +94,7 @@ Upstream-Name: ${NAME}
 Source: ${HOMEPAGE}
 
 Files: *
-Copyright: 2018-2023 Authors (Docu/ru/BB-Translators.odc)
+Copyright: 2018-2024 Authors (Docu/ru/BB-Translators.odc)
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  .
