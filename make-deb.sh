@@ -1,9 +1,9 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=2.15
+VERSION=2.19
 HOMEPAGE=https://github.com/bbcb/russian
-MAINTAINER_1="Ivan Denisov <iadenisov@oberon.org>"
+MAINTAINER_1="Ivan Denisov <d.ivan.krsk@gmail.com>"
 
 SIZE=$(du -a . | tail -n 1 | awk '{print $1}')
 
@@ -50,6 +50,23 @@ Description: Пакет русификации для BlackBox Component Builder
 EOF
 
 gzip -9cn - > $DOC/changelog.gz << EOF
+ -- ${MAINTAINER_1} Wed, 21 May 2025 02:00:00 +0700
+
+ bbcb2-ru (2.19) unstable; urgency=low
+  * add Paket
+
+ -- ${MAINTAINER_1} Sat, 10 May 2025 02:00:00 +0700
+
+ bbcb2-ru (2.18) unstable; urgency=low
+  * translate DevCPT messages
+
+ -- ${MAINTAINER_1} Sat, 05 Apr 2025 02:00:00 +0700
+
+ bbcb2-ru (2.16) unstable; urgency=low
+  * def color for text
+
+ -- ${MAINTAINER_1} Sun, 07 Apr 2023 02:00:00 +0700
+
  bbcb2-ru (2.15) unstable; urgency=low
   * scale factor
 
@@ -94,7 +111,7 @@ Upstream-Name: ${NAME}
 Source: ${HOMEPAGE}
 
 Files: *
-Copyright: 2018-2024 Authors (Docu/ru/BB-Translators.odc)
+Copyright: 2018-2025 Authors (Docu/ru/BB-Translators.odc)
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  .
