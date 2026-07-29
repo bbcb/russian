@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NAME=bbcb2-ru
-VERSION=2.20
+VERSION=2.21
 HOMEPAGE=https://github.com/bbcb/russian
 MAINTAINER_1="Ivan Denisov <d.ivan.krsk@gmail.com>"
 
@@ -28,7 +28,6 @@ makedeb() {
     lintian $BBCB.deb
 }
 
-
 rm -fr $TMP
 mkdir -p $BBCB$BLACKBOX $DEBIAN $DOC
 
@@ -50,6 +49,11 @@ Description: Пакет русификации для BlackBox Component Builder
 EOF
 
 gzip -9cn - > $DOC/changelog.gz << EOF
+ -- ${MAINTAINER_1} Wed, 29 July 2026 18:30:00 +0700
+
+ bbcb2-ru (2.21) unstable; urgency=low
+  * update figures
+
  -- ${MAINTAINER_1} Wed, 21 May 2025 02:00:00 +0700
 
  bbcb2-ru (2.19) unstable; urgency=low
@@ -111,7 +115,7 @@ Upstream-Name: ${NAME}
 Source: ${HOMEPAGE}
 
 Files: *
-Copyright: 2018-2025 Authors (Docu/ru/BB-Translators.odc)
+Copyright: 2018-2026 Authors (Docu/ru/BB-Translators.odc)
 License: BSD-2-clause
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
  .
